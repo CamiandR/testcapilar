@@ -1,0 +1,1 @@
+import React from 'react';import TestCapilar from './TestCapilar';export default function App(){return <TestCapilar/>;}
