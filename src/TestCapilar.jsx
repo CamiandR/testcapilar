@@ -79,42 +79,23 @@ const TestCapilar = () => {
     return paths[steps[currentStep]] || '';
   };
 
-  // Componentes SVG para los íconos de género
+  // Componente para el ícono de mujer usando PNG
   const WomanIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-full h-full">
-      <path 
-        fill="currentColor" 
-        fillRule="evenodd" 
-        d="M50,28.6c-0.9,0-1.6-0.7-1.6-1.4v-1.4h2c0.2,0,0.2-0.2,0.3-0.4l0,0l0,0l0,0l0.1,0.3c0.1,0.3,0.1,0.2,0.6,0.2v1.3c0,0.3-0.2,0.7-0.4,0.9c0,0.1,0,0.1-0.1,0.1c-0.3,0.3-0.7,0.4-1.1,0.4M54.4,35.2h0c-0.1,0-0.2-0.1-0.2-0.2v-1.8h-0.3c0.1,0.3,0.2,0.6-0.1,1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0.3,0.1,0.8-0.2,0.8s-0.2-0.1-0.2-0.2c0-1,0-0.6,0.2-1c0.3-0.5-0.2-0.9-0.2-1c0-0.3,0.5-0.2,0.9-0.2v-0.3c0-0.4-0.4-0.8-0.8-1c-0.1,0-0.1,0-0.2,0c0,0.2-0.3,0.4-0.5,0.5c-0.5,0.3-1,0.3-1.5,0c-0.2-0.1-0.4-0.3-0.5-0.5c-0.3,0.1-0.5,0.1-0.6,0.3c-0.3,0.3-0.3,0.6-0.3,1h0.7c0.2,0,0.2,0.2,0.1,0.3c-0.5,0.7,0.1,1,0.1,1.2s0.1,0.8-0.2,0.8s-0.2-0.5-0.2-0.8c0-0.1-0.3-0.3-0.3-0.7s0-0.3,0.1-0.6h-0.3v1.8c0,0.1-0.1,0.2-0.2,0.2h-0.1c-0.1,0-0.2-0.1-0.2-0.2v-2.4c0-0.6,0.4-1.1,0.9-1.3c0.3-0.1,0.6-0.1,0.9-0.1c0-0.5,0-0.4-0.2-0.4c-0.1-0.1-0.4-0.2-0.4-0.3c-0.2-0.1-0.1-0.2-0.3-0.3c-0.1-0.1-0.3-0.1-0.4-0.1c-0.4-0.2-0.7-0.6-0.7-1.3v-1.6c0-0.4,0.1-0.7,0.2-1c0.3-0.9,1.2-1.3,2.1-1.3s1.1,0,1.7,0.2c1.1,0.5,0.6,0.9,0.4,0.7c0,0,0,0-0.1-0.1c0,0,0,0-0.1-0.1c-0.6-0.5-1.3-0.4-2.1-0.4s-1.8,0.8-1.8,1.8v1.9c0,0.3,0.2,0.6,0.5,0.8c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.4,0-1.4,0-1.8s0.2-0.2,0.4-0.2h1.9s0.2-0.4,0.2-0.4c0.1-0.1,0.1-0.3,0.3-0.3s0.2,0.2,0.3,0.4c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0.3,0,0.7-0.1,0.7,0.2c0,0.5,0.1,1.7-0.1,2.1c0.1,0,0.3-0.2,0.3-0.3c0.1-0.1,0.1-0.3,0.1-0.5v-1.7c0-0.4-0.1-0.6-0.1-0.7s0.3-0.4,0.4,0.1c0.1,0.4,0.1,1.9,0.1,2.5s-0.4,0.9-0.8,1.1c-0.4,0.2-0.2-0.1-0.5,0.3c0,0-0.1,0.1-0.1,0.1c-0.5,0.5-0.5,0-0.5,0.7c0.5,0,0.8,0,1.2,0.3c0.1,0,0.1,0.1,0.1,0.1c0.2,0.1,0.1,0.1,0.2,0.2c0,0,0.1,0.1,0.1,0.1c0.2,0.3,0.2,0.6,0.2,0.9v2.2c0,0.1-0.1,0.2-0.2,0.2ZM47.5,29.6c0.5,0,0.4,0,0.4-0.6c0.4,0,0.1,0,0.7,0c0,0.2-0.1,0.6,0.1,0.6c0.1,0,0.2,0,0.3,0c-0.3,0.4-1.2,0.5-1.5,0Z"
-      />
-      <path 
-        fill="currentColor" 
-        d="M47.6,27.6c0,0.1,0.1,0.2,0.2,0.3c0.3,0.2,0.7,0.1,1-0.1c0.2-0.1,0.1-0.4-0.1-0.4s-0.3,0.4-0.7,0.1c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.2"
-      />
-    </svg>
+    <img 
+      src="./public/icons/WomanIcon.png" 
+      alt="Mujer" 
+      className="w-full h-full object-contain"
+      style={{ filter: 'brightness(0) invert(1)' }}
+    />
   );
 
   const ManIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-full h-full">
-      <path 
-        fill="currentColor" 
-        fillRule="evenodd" 
-        d="M50,28.6c-0.9,0-1.6-0.7-1.6-1.4v-1.4h2c0.2,0,0.2-0.2,0.3-0.4l0,0l0,0l0,0l0.1,0.3c0.1,0.3,0.1,0.2,0.6,0.2v1.3c0,0.3-0.2,0.7-0.4,0.9c0,0.1,0,0.1-0.1,0.1c-0.3,0.3-0.7,0.4-1.1,0.4M54.4,35.2h0c-0.1,0-0.2-0.1-0.2-0.2v-1.8h-0.3c0.1,0.3,0.2,0.6-0.1,1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0.3,0.1,0.8-0.2,0.8s-0.2-0.1-0.2-0.2c0-1,0-0.6,0.2-1c0.3-0.5-0.2-0.9-0.2-1c0-0.3,0.5-0.2,0.9-0.2v-0.3c0-0.4-0.4-0.8-0.8-1c-0.1,0-0.1,0-0.2,0c0,0.2-0.3,0.4-0.5,0.5c-0.5,0.3-1,0.3-1.5,0c-0.2-0.1-0.4-0.3-0.5-0.5c-0.3,0.1-0.5,0.1-0.6,0.3c-0.3,0.3-0.3,0.6-0.3,1h0.7c0.2,0,0.2,0.2,0.1,0.3c-0.5,0.7,0.1,1,0.1,1.2s0.1,0.8-0.2,0.8s-0.2-0.5-0.2-0.8c0-0.1-0.3-0.3-0.3-0.7s0-0.3,0.1-0.6h-0.3v1.8c0,0.1-0.1,0.2-0.2,0.2h-0.1c-0.1,0-0.2-0.1-0.2-0.2v-2.4c0-0.6,0.4-1.1,0.9-1.3c0.3-0.1,0.6-0.1,0.9-0.1c0-0.5,0-0.4-0.2-0.4c-0.1-0.1-0.4-0.2-0.4-0.3c-0.2-0.1-0.1-0.2-0.3-0.3c-0.1-0.1-0.3-0.1-0.4-0.1c-0.4-0.2-0.7-0.6-0.7-1.3v-1.6c0-0.4,0.1-0.7,0.2-1c0.3-0.9,1.2-1.3,2.1-1.3s1.1,0,1.7,0.2c1.1,0.5,0.6,0.9,0.4,0.7c0,0,0,0-0.1-0.1c0,0,0,0-0.1-0.1c-0.6-0.5-1.3-0.4-2.1-0.4s-1.8,0.8-1.8,1.8v1.9c0,0.3,0.2,0.6,0.5,0.8c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.4,0-1.4,0-1.8s0.2-0.2,0.4-0.2h1.9s0.2-0.4,0.2-0.4c0.1-0.1,0.1-0.3,0.3-0.3s0.2,0.2,0.3,0.4c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0.3,0,0.7-0.1,0.7,0.2c0,0.5,0.1,1.7-0.1,2.1c0.1,0,0.3-0.2,0.3-0.3c0.1-0.1,0.1-0.3,0.1-0.5v-1.7c0-0.4-0.1-0.6-0.1-0.7s0.3-0.4,0.4,0.1c0.1,0.4,0.1,1.9,0.1,2.5s-0.4,0.9-0.8,1.1c-0.4,0.2-0.2-0.1-0.5,0.3c0,0-0.1,0.1-0.1,0.1c-0.5,0.5-0.5,0-0.5,0.7c0.5,0,0.8,0,1.2,0.3c0.1,0,0.1,0.1,0.1,0.1c0.2,0.1,0.1,0.1,0.2,0.2c0,0,0.1,0.1,0.1,0.1c0.2,0.3,0.2,0.6,0.2,0.9v2.2c0,0.1-0.1,0.2-0.2,0.2ZM47.5,29.6c0.5,0,0.4,0,0.4-0.6c0.4,0,0.1,0,0.7,0c0,0.2-0.1,0.6,0.1,0.6c0.1,0,0.2,0,0.3,0c-0.3,0.4-1.2,0.5-1.5,0Z"
-      />
-      {/* Diferencias para el hombre: cabello más corto y hombros más anchos */}
-      <path 
-        fill="currentColor" 
-        d="M46,21.5c0,0.1,0.1,0.1,0.2,0.1h7.6c0.1,0,0.2,0,0.2-0.1c0-0.2-0.8-1.2-4-1.2s-4,1-4,1.2"
-      />
-      {/* Hombros más anchos */}
-      <path 
-        fill="currentColor" 
-        d="M43,30.5c0.2,0.4,0.5,0.8,0.8,1.1c0.1,0.1,0.2,0.1,0.3,0.1h11.8c0.1,0,0.2,0,0.3-0.1c0.3-0.3,0.6-0.7,0.8-1.1c0.1-0.2-0.1-0.4-0.3-0.4H43.3c-0.2,0-0.4,0.2-0.3,0.4"
-      />
-      {/* Piernas separadas */}
-      <rect x="46" y="35" width="2.5" height="8" fill="currentColor"/>
-      <rect x="51.5" y="35" width="2.5" height="8" fill="currentColor"/>
-    </svg>
+    <img 
+      src="./public/icons/ManIcon.png" 
+      alt="Mujer" 
+      className="w-full h-full object-contain"
+      style={{ filter: 'brightness(0) invert(1)' }}
+    />
   );
 
   const renderGenderStep = () => (
@@ -131,7 +112,7 @@ const TestCapilar = () => {
               : 'bg-purple-200 text-purple-700 hover:bg-purple-300'
           }`}
         >
-          <div className="w-16 h-16 rounded-full bg-purple-300 flex items-center justify-center p-2">
+          <div className="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center p-2">
             <WomanIcon />
           </div>
           <span className="font-semibold">Mujer</span>
@@ -144,7 +125,7 @@ const TestCapilar = () => {
               : 'bg-purple-200 text-purple-700 hover:bg-purple-300'
           }`}
         >
-          <div className="w-16 h-16 rounded-full bg-purple-400 flex items-center justify-center p-2">
+          <div className="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center p-2">
             <ManIcon />
           </div>
           <span className="font-semibold">Hombre</span>
@@ -160,10 +141,10 @@ const TestCapilar = () => {
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { key: 'liso', label: 'Liso', pattern: '|||' },
-          { key: 'ondulado', label: 'Ondulado', pattern: '~~~' },
-          { key: 'rizado', label: 'Rizado', pattern: 'SSS' },
-          { key: 'afro', label: 'Afro', pattern: '∞∞∞' }
+          { key: 'liso', label: 'Liso', icon: 'HairStraightIcon.png' },
+          { key: 'ondulado', label: 'Ondulado', icon: 'HairWavyIcon.png' },
+          { key: 'rizado', label: 'Rizado', icon: 'HairCurlyIcon.png' },
+          { key: 'afro', label: 'Afro', icon: 'HairAfroIcon.png' }
         ].map(type => (
           <button
             key={type.key}
@@ -174,7 +155,18 @@ const TestCapilar = () => {
                 : 'bg-purple-200 text-purple-700 hover:bg-purple-300'
             }`}
           >
-            <div className="text-2xl font-bold">{type.pattern}</div>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src={`/icons/${type.icon}`} 
+                alt={type.label} 
+                className="w-full h-full object-contain"
+                style={{ 
+                  filter: responses.hairType === type.key 
+                    ? 'brightness(0) invert(1)' 
+                    : 'brightness(0) invert(0.4)' 
+                }}
+              />
+            </div>
             <span className="font-semibold">{type.label}</span>
           </button>
         ))}
