@@ -567,7 +567,7 @@ const TestCapilar = () => {
         >
           <div className="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center p-2">
             <img 
-              src="/icons/WomanIcon.png" 
+              src="https://www.factoryim.co/assets/WomanIcon.png" 
               alt="Mujer" 
               className="w-full h-full object-contain"
               onError={(e) => {
@@ -599,7 +599,7 @@ const TestCapilar = () => {
         >
           <div className="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center p-2">
             <img 
-              src="/icons/ManIcon.png" 
+              src="https://www.factoryim.co/assets/ManIcon.png" 
               alt="Hombre" 
               className="w-full h-full object-contain"
               onError={(e) => {
